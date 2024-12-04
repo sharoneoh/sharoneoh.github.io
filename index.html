@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>320_Final_Project (1)</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>320_Final_Project (2)</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -8157,7 +8157,7 @@ We find with these conclusions using the different tests.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="n">data_2016</span> <span class="o">=</span> <span class="n">accident_data2016</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">personal_data2016</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">'CASENUM'</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">'inner'</span><span class="p">)</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">vehicle_data2016</span><span class="p">,</span> <span class="n">on</span><span class="o">=</span><span class="s1">'CASENUM'</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s1">'inner'</span><span class="p">)</span>
@@ -8170,16 +8170,29 @@ We find with these conclusions using the different tests.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">data_2016</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">data_2017</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">data_2018</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">data_2019</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">data_2020</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>(234169, 197) (276909, 197) (239343, 190) (268619, 353) (256742, 349)
+</pre>
 </div>
 </div>
 </div>
@@ -8195,16 +8208,226 @@ We find with these conclusions using the different tests.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">data_2016</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>CASENUM            0
+PSU_x              0
+PJ_x               0
+STRATUM_x          0
+VE_TOTAL           0
+VE_FORMS_x         0
+PVH_INVL           0
+PEDS               0
+PERMVIT            0
+PERNOTMVIT         0
+NUM_INJ            0
+MONTH_x            0
+YEAR               0
+DAY_WEEK           0
+HOUR_x             0
+MINUTE_x           0
+HARM_EV_x          0
+ALCOHOL            0
+MAX_SEV            0
+MAN_COLL_x         0
+RELJCT1            0
+RELJCT2            0
+TYP_INT            0
+WRK_ZONE           0
+REL_ROAD           0
+LGT_COND           0
+WEATHER1           0
+WEATHER2           0
+WEATHER            0
+SCH_BUS_x          0
+INT_HWY            0
+CF1                0
+CF2                0
+CF3                0
+WKDY_IM            0
+HOUR_IM            0
+MINUTE_IM          0
+EVENT1_IM          0
+MANCOL_IM          0
+RELJCT1_IM         0
+RELJCT2_IM         0
+LGTCON_IM          0
+WEATHR_IM          0
+MAXSEV_IM          0
+NO_INJ_IM          0
+ALCHL_IM           0
+URBANICITY_x       0
+REGION_x           0
+PSUSTRAT_x         0
+PSU_VAR_x          0
+WEIGHT_x           0
+VE_FORMS_y         0
+VEH_NO_x           0
+PER_NO             0
+PSU_y              0
+PJ_y               0
+STRATUM_y          0
+STR_VEH            0
+MONTH_y            0
+HOUR_y             0
+MINUTE_y           0
+HARM_EV_y          0
+MAN_COLL_y         0
+SCH_BUS_y          0
+MAKE_x          4100
+BODY_TYP_x      4100
+MOD_YEAR_x      4100
+MAK_MOD_x       4100
+TOW_VEH_x       4100
+SPEC_USE_x      4100
+EMER_USE_x      4100
+ROLLOVER_x      4100
+IMPACT1_x       4100
+FIRE_EXP_x      4100
+AGE                0
+SEX                0
+PER_TYP            0
+INJ_SEV            0
+SEAT_POS           0
+REST_USE           0
+REST_MIS           0
+AIR_BAG            0
+EJECTION           0
+DRINKING           0
+ALC_STATUS         0
+ATST_TYP           0
+ALC_RES            0
+DRUGS              0
+DSTATUS            0
+DRUGTST1           0
+DRUGTST2           0
+DRUGTST3           0
+DRUGRES1           0
+DRUGRES2           0
+DRUGRES3           0
+HOSPITAL           0
+P_SF1              0
+P_SF2              0
+P_SF3              0
+LOCATION           0
+SEX_IM             0
+INJSEV_IM          0
+EJECT_IM           0
+PERALCH_IM         0
+SEAT_IM            0
+AGE_IM             0
+URBANICITY_y       0
+REGION_y           0
+PSUSTRAT_y         0
+PSU_VAR_y          0
+WEIGHT_y           0
+VEH_NO_y           0
+PSU                0
+PJ                 0
+STRATUM            0
+VE_FORMS           0
+NUMOCCS            0
+MONTH              0
+HOUR               0
+MINUTE             0
+HARM_EV            0
+MAN_COLL           0
+UNITTYPE           0
+HIT_RUN            0
+MAKE_y             0
+MODEL              0
+BODY_TYP_y         0
+MOD_YEAR_y         0
+MAK_MOD_y          0
+VIN                0
+TOW_VEH_y          0
+J_KNIFE            0
+MCARR_I1           0
+MCARR_I2           0
+MCARR_ID           0
+GVWR               0
+V_CONFIG           0
+CARGO_BT           0
+HAZ_INV            0
+HAZ_PLAC           0
+HAZ_ID             0
+HAZ_CNO            0
+HAZ_REL            0
+BUS_USE            0
+SPEC_USE_y         0
+EMER_USE_y         0
+TRAV_SP            0
+ROLLOVER_y         0
+ROLINLOC           0
+IMPACT1_y          0
+DEFORMED           0
+TOWED              0
+M_HARM             0
+VEH_SC1            0
+VEH_SC2            0
+VEH_ALCH           0
+MAX_VSEV           0
+NUM_INJV           0
+FIRE_EXP_y         0
+DR_PRES            0
+DR_ZIP             0
+SPEEDREL           0
+DR_SF1             0
+DR_SF2             0
+DR_SF3             0
+DR_SF4             0
+VTRAFWAY           0
+VNUM_LAN           0
+VSPD_LIM           0
+VALIGN             0
+VPROFILE           0
+VSURCOND           0
+VTRAFCON           0
+VTCONT_F           0
+P_CRASH1           0
+P_CRASH2           0
+P_CRASH3           0
+PCRASH4            0
+PCRASH5            0
+ACC_TYPE           0
+TRLR1VIN           0
+TRLR2VIN           0
+TRLR3VIN           0
+HITRUN_IM          0
+BDYTYP_IM          0
+MDLYR_IM           0
+IMPACT1_IM         0
+VEVENT_IM          0
+PCRASH1_IM         0
+MXVSEV_IM          0
+NUMINJ_IM          0
+V_ALCH_IM          0
+URBANICITY         0
+REGION             0
+PSUSTRAT           0
+PSU_VAR            0
+WEIGHT             0
+dtype: int64
+</pre>
 </div>
 </div>
 </div>
